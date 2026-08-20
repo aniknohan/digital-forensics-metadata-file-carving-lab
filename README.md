@@ -379,6 +379,5 @@ This hands-on Digital Forensics Metadata and File Carving Lab was completed to d
 
 ---
 
-*This project was completed in a controlled lab environment for digital forensics training and portfolio demonstration.*
 
 
