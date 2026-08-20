@@ -345,3 +345,32 @@ ExifTool provided visibility into metadata contained within PDF and JPEG evidenc
 The recovered JPEG produced the same MD5 and SHA-256 hashes as the original evidence and was confirmed through direct comparison to be byte-for-byte identical.
 
 The lab therefore demonstrates both successful deleted-file recovery and a defensible process for validating the integrity of recovered digital evidence.
+
+---
+
+---
+
+## Author
+
+**Anik Nohan**
+
+This hands-on Digital Forensics Metadata and File Carving Lab was completed to demonstrate practical skills in:
+
+- PDF and JPEG metadata analysis
+- EXIF metadata examination
+- NTFS filesystem analysis
+- Deleted-file identification
+- Deleted-file recovery using The Sleuth Kit
+- Evidence verification using MD5 and SHA-256
+- Byte-for-byte integrity validation
+- Forensic evidence documentation
+
+### Tools Used
+
+`ExifTool` • `The Sleuth Kit` • `fls` • `icat` • `fsstat` • `NTFS-3G` • `LibreOffice` • `md5sum` • `sha256sum` • `cmp`
+
+---
+
+*This project was completed in a controlled lab environment for digital forensics training and portfolio demonstration.*
+
+
