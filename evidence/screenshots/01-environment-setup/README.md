@@ -153,6 +153,60 @@ The system returned:
 
 The NTFS-3G utilities provide support for creating and interacting with NTFS filesystems in Linux. Later in this lab, `mkfs.ntfs` will be used to format a controlled disk image as NTFS so that a deleted-file recovery scenario can be created and examined with The Sleuth Kit.
 
+---
+
+## Step 4 — LibreOffice Writer Installation and Verification
+
+LibreOffice Writer was verified on the Ubuntu virtual machine to support the creation of controlled document evidence for metadata analysis.
+
+### Installation
+
+The following command was used to verify that LibreOffice Writer was installed:
+
+```bash
+sudo apt install libreoffice-writer
+```
+
+The Ubuntu package manager confirmed that `libreoffice-writer` was already installed and up to date.
+
+### Version Verification
+
+The installed LibreOffice version was verified using:
+
+```bash
+libreoffice --version
+```
+
+The system reported:
+
+```text
+LibreOffice 24.2.7.2 420(Build:2)
+```
+
+**Installed version:** `24.2.7.2`
+
+### Executable Verification
+
+The location of the LibreOffice executable was verified using:
+
+```bash
+which libreoffice
+```
+
+The system returned:
+
+```text
+/usr/bin/libreoffice
+```
+
+### Evidence
+
+![LibreOffice installation and verification](04-libreoffice-installation-and-verification.png)
+
+### Analyst Note
+
+LibreOffice Writer will be used to create a controlled document containing known metadata values. The document will then be exported as a PDF and examined with ExifTool to determine whether the embedded metadata can be successfully identified during forensic analysis.
+
 ## Environment Setup Summary
 
 The primary forensic analysis tools required for the lab were successfully installed and verified.
@@ -164,5 +218,6 @@ The primary forensic analysis tools required for the lab were successfully insta
 | `fls` | 4.12.1 | Identify filesystem entries and deleted files |
 | `icat` | 4.12.1 | Recover file contents from filesystem images |
 | NTFS-3G / `mkfs.ntfs` | 2022.10.3 | Create and work with the NTFS filesystem used in the forensic image |
+| LibreOffice Writer | 24.2.7.2 | Create controlled PDF evidence containing known document metadata |
 
 The Ubuntu virtual machine is now prepared for the evidence creation, metadata analysis, and deleted-file recovery stages of the lab.
