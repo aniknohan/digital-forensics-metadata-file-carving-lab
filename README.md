@@ -360,10 +360,6 @@ No real-world systems, third-party data, or unauthorized evidence were accessed 
 
 ## Author
 
----
-
-## Author
-
 **Anik Nohan**
 
 This hands-on Digital Forensics Metadata and File Carving Lab was completed to demonstrate practical skills in:
