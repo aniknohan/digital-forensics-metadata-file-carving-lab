@@ -348,6 +348,18 @@ The lab therefore demonstrates both successful deleted-file recovery and a defen
 
 ---
 
+## Disclaimer
+
+This project was performed entirely within a **controlled laboratory environment** for educational, digital forensics training, and cybersecurity portfolio purposes.
+
+All evidence files, filesystem images, metadata, deletion activity, and recovery procedures were intentionally created or performed for forensic analysis and demonstration.
+
+No real-world systems, third-party data, or unauthorized evidence were accessed or analyzed during this project.
+
+---
+
+## Author
+
 ---
 
 ## Author
