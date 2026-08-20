@@ -99,6 +99,60 @@ The Sleuth Kit was successfully installed and verified on the Ubuntu virtual mac
 
 ---
 
+---
+
+## Step 3 — NTFS Tools Installation and Verification
+
+The NTFS-3G utilities were verified on the Ubuntu virtual machine to provide support for creating and working with NTFS filesystems during the file-carving portion of the lab.
+
+### Installation
+
+The following command was used to verify that the NTFS-3G package was installed:
+
+```bash
+sudo apt install ntfs-3g
+```
+
+The Ubuntu package manager confirmed that `ntfs-3g` was already installed and up to date.
+
+### Version Verification
+
+The `mkfs.ntfs` utility was verified using:
+
+```bash
+mkfs.ntfs --version
+```
+
+The system reported:
+
+```text
+mkntfs v2022.10.3 (libntfs-3g)
+```
+
+**Installed version:** `2022.10.3`
+
+### Executable Verification
+
+The location of the `mkfs.ntfs` executable was verified using:
+
+```bash
+which mkfs.ntfs
+```
+
+The system returned:
+
+```text
+/usr/sbin/mkfs.ntfs
+```
+
+### Evidence
+
+![NTFS tools installation and verification](03-ntfs-tools-installation-and-verification.png)
+
+### Analyst Note
+
+The NTFS-3G utilities provide support for creating and interacting with NTFS filesystems in Linux. Later in this lab, `mkfs.ntfs` will be used to format a controlled disk image as NTFS so that a deleted-file recovery scenario can be created and examined with The Sleuth Kit.
+
 ## Environment Setup Summary
 
 The primary forensic analysis tools required for the lab were successfully installed and verified.
@@ -109,5 +163,6 @@ The primary forensic analysis tools required for the lab were successfully insta
 | The Sleuth Kit | 4.12.1 | Filesystem forensic analysis |
 | `fls` | 4.12.1 | Identify filesystem entries and deleted files |
 | `icat` | 4.12.1 | Recover file contents from filesystem images |
+| NTFS-3G / `mkfs.ntfs` | 2022.10.3 | Create and work with the NTFS filesystem used in the forensic image |
 
 The Ubuntu virtual machine is now prepared for the evidence creation, metadata analysis, and deleted-file recovery stages of the lab.
