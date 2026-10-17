@@ -101,7 +101,7 @@ ae890fcff6d26ea957702c5a4cf38b227336ddad0ae22053aa332208f62deec7
 
 ### Evidence
 
-![Final evidence hash summary](15-final-evidence-hash-summary.png)
+![Final evidence hash summary](15-final-evidence-and-hash-summary.png)
 
 ---
 
