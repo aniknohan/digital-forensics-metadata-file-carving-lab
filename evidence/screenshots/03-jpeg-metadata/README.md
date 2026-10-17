@@ -53,6 +53,8 @@ Notable findings included:
 
 The `SONY DSC` image-description value does not match the reported Canon camera make and model. This demonstrates why forensic analysts should evaluate metadata fields critically rather than assuming that every embedded value accurately represents the origin of a file.
 
+Later comparison (Phase 05) showed that the pre-edit backup `picture.jpg_original` contains **no** `Make`, `Model` or `DateTimeOriginal` tags. The Canon values are therefore consistent with having been added to `picture.jpg` with ExifTool, which saves the untouched file as `picture.jpg_original` whenever it writes metadata. Metadata is easy to edit, so camera and date tags should never be accepted without corroboration.
+
 ---
 
 ## Forensic Significance

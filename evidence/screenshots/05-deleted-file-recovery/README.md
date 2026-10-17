@@ -119,6 +119,8 @@ Image Width            : 960
 Image Height           : 643
 ```
 
+The comparison command also requested `Make`, `Model` and `DateTimeOriginal`, but **neither file returned those tags**. Only the image description and dimensions exist in `picture.jpg_original` and in the recovered file.
+
 ### Evidence
 
 ![Recovered EXIF metadata verification](14-recovered-exif-metadata-verification.png)
@@ -126,6 +128,8 @@ Image Height           : 643
 ### Analyst Note
 
 The recovered JPEG remained structurally readable and retained embedded metadata after filesystem-level recovery. Matching metadata values between the original and recovered evidence provide additional support that the recovered file represents the expected image.
+
+The missing `Make`, `Model` and `DateTimeOriginal` tags matter. The working copy `picture.jpg` (Phase 03) reports `Canon` / `Canon EOS 80D` / `2026:07:15 14:32:18`, but the pre-edit backup `picture.jpg_original` and the recovered file do not. ExifTool creates a `<name>_original` backup whenever it writes tags to a file, so these values are consistent with having been **written into `picture.jpg` with ExifTool after the original was captured**. This is why integrity verification compares the recovered file with `picture.jpg_original`, not `picture.jpg`.
 
 ---
 

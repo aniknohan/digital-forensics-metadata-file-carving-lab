@@ -96,7 +96,7 @@ sha256sum carve1.img
 The forensic image SHA-256 value was:
 
 ```text
-ae890fcff6d26ea957702c5a4cf38b227336ddad00ae22053aa332208f62deec7
+ae890fcff6d26ea957702c5a4cf38b227336ddad0ae22053aa332208f62deec7
 ```
 
 ### Evidence
@@ -114,7 +114,7 @@ ae890fcff6d26ea957702c5a4cf38b227336ddad00ae22053aa332208f62deec7
 | `picture.jpg_original` | SHA-256 | `f3dc904215b9ec79451dfa3514b1d9bddd2daa29286952ba2d0d5ae84bd70775` |
 | `recovered-evidence.jpg` | SHA-256 | `f3dc904215b9ec79451dfa3514b1d9bddd2daa29286952ba2d0d5ae84bd70775` |
 | Original vs. recovered JPEG | Byte comparison | Identical |
-| `carve1.img` | SHA-256 | `ae890fcff6d26ea957702c5a4cf38b227336ddad00ae22053aa332208f62deec7` |
+| `carve1.img` | SHA-256 | `ae890fcff6d26ea957702c5a4cf38b227336ddad0ae22053aa332208f62deec7` |
 
 ---
 
